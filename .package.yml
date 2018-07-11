@@ -1,0 +1,7 @@
+settings:
+  withTestFiles: 
+    default: false
+    reduce: anyTrue
+  simd:
+    default: SSE2
+    reduce: first

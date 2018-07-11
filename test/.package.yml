@@ -1,0 +1,9 @@
+libraries:
+  - name: Zefiros-Software/simdpp
+    version: '@libsimdpp-2.x'
+    definition: ../
+    settings:
+      withTestFiles: true
+modules:
+  - name: Zefiros-Software/Defaults
+    version: '@head'
