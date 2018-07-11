@@ -1,0 +1,21 @@
+sudo: required
+language: generic
+matrix:
+  include:
+    - os: linux
+      dist: trusty
+      env: VERSION=6
+    - os: linux
+      dist: trusty
+      env: VERSION=7
+    - os: osx
+      osx_image: xcode9.2
+      language: generic
+global:
+  env:
+  - PROJECT=simdpp
+  - PROJECT_TEMPLATE=default
+install:
+  - source /dev/stdin <<< "$(curl -s https://raw.githubusercontent.com/Zefiros-Software/ZPM/dev/script/install-zpm.sh)"
+script:
+  - 'cd test && zpm run test-definition simdpp'

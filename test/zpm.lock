@@ -1,0 +1,43 @@
+{
+  "definition": "./",
+  "optionals": [],
+  "private": {
+    "libraries": [ {
+      "definition": "../",
+      "hash": "ecd9282cbddee35235b465acc7ba5d741bd13e68",
+      "name": "Zefiros-Software/simdpp",
+      "repository": "https://github.com/p12tic/libsimdpp.git",
+      "settings": {
+        "withTestFiles": true
+      },
+      "tag": "libsimdpp-2.x",
+      "versionRequirement": "@libsimdpp-2.x"
+    } ],
+    "modules": [ {
+      "definition": "https://github.com/Zefiros-Software/ZefirosDefaults.git",
+      "hash": "66cac4a6aa7f109e0fb8ce9daaac9f4330307b46",
+      "name": "Zefiros-Software/Defaults",
+      "public": {
+        "libraries": [ {
+          "definition": "https://github.com/Zefiros-Software/GoogleTest.git",
+          "hash": "ba96d0b1161f540656efdaed035b3c062b60e006",
+          "name": "Zefiros-Software/GoogleTest",
+          "repository": "https://github.com/google/googletest.git",
+          "tag": "HEAD",
+          "versionRequirement": "@head || ^1.0.0"
+        }, {
+          "definition": "https://github.com/Zefiros-Software/GoogleBenchmark.git",
+          "hash": "5946795e82f778fff891c37f56c0d7a76a118bf9",
+          "name": "Zefiros-Software/GoogleBenchmark",
+          "repository": "https://github.com/google/benchmark.git",
+          "tag": "HEAD",
+          "versionRequirement": "@head"
+        } ]
+      },
+      "repository": "https://github.com/Zefiros-Software/ZefirosDefaults.git",
+      "tag": "HEAD",
+      "versionRequirement": "@head"
+    } ]
+  },
+  "repository": "./"
+}
