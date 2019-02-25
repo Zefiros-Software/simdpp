@@ -45,6 +45,7 @@
             if veset:match("AVX") then
                 defines "SIMDPP_HAS_AVX_SUPPORT"
             end
+            defines "SIMDPP_ARCH_X86_FMA3"
 
             vectorextensions(veset)
 
